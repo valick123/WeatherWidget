@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+
+
+    & .wrapper {
+        padding: 0;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .main {
+            flex-grow: 1;
+        }
+
+
+    }
+}

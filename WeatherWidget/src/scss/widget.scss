@@ -1,0 +1,179 @@
+.widget {
+    color: #fff;
+    background-color: #455A64;
+    max-width: 320px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 16px;
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5px;
+
+        & .source {
+            border: 3px solid #687c8a;
+            background-color: #8ca8bb;
+            margin-right: 10px;
+            border-radius: 16px;
+            color: #fff;
+        }
+
+        & .getWeatherBtn {
+            border: 3px solid #1c6da3;
+            border-radius: 16px;
+            background-color: #0098ff;
+            color: #fff;
+        }
+    }
+
+    &__body {
+        & .main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            & .rigion {
+                flex-basis: 100%;
+                position: relative;
+                text-align: center;
+
+                &__text {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url('../img/LocationIco.png');
+                        top: 0;
+                        left: -22px;
+                    }
+                }
+
+            }
+
+
+            & .temp {
+                position: relative;
+                flex-basis: 40%;
+                font-size: 70px;
+                text-align: center;
+                color: #49b5ff;
+            }
+
+
+
+        }
+
+        & .description {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            & .weatherCondition {
+                position: relative;
+                padding-left: 20px;
+                flex-basis: 50%;
+                flex-grow: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../img/wind.png');
+                    left: 2px;
+                    top: 5px;
+                }
+            }
+
+            & .windSpeed {
+                position: relative;
+                padding-left: 20px;
+                flex-basis: 50%;
+                flex-grow: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../img/wind-speed.png');
+                    left: 2px;
+                    top: 5px;
+                }
+            }
+
+            & .windDeg {
+                position: relative;
+                padding-left: 20px;
+                flex-basis: 50%;
+                flex-grow: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../img/wind-deg.png');
+                    left: 2px;
+                    top: 5px;
+                }
+            }
+
+            & .humidity {
+                position: relative;
+                padding-left: 20px;
+                flex-basis: 50%;
+                flex-grow: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../img/humidity.png');
+                    left: 2px;
+                    top: 5px;
+                }
+            }
+
+            & .pressure {
+                position: relative;
+                padding-left: 20px;
+                flex-basis: 50%;
+                flex-grow: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../img/pressure-gauge.png');
+                    left: 2px;
+                    top: 5px;
+                }
+            }
+
+            & .cloudness {
+                position: relative;
+                padding-left: 20px;
+                flex-basis: 50%;
+                flex-grow: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../img/cloudness.png');
+                    left: 2px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
